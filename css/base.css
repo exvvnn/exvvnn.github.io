@@ -1,0 +1,350 @@
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+/* TODO: Add comments to explain each section for what is used for what for decs .. */
+/* Variables */
+:root {
+
+  --temp-background: #23465E;
+  /* Colors */
+  --color-navy: #0a192f;
+  --color-light-navy: #172a45;
+  --color-lightest-navy: #303C55;
+  --color-slate: #8892b0;
+  --color-light-slate: #a8b2d1;
+  --color-lightest-slate: #ccd6f6;
+  --color-white: #e6f1ff;
+  --color-accent: #64ffda;
+  --color-accent-rgb: 100, 255, 218;
+  
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  --font-size-base: 1rem;
+  --line-height-base: 1.6;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2.5rem;
+  
+  /* Border radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(2, 12, 27, 0.3);
+  --shadow-md: 0 4px 12px rgba(2, 12, 27, 0.4);
+  --shadow-lg: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  
+  /* Transitions */
+  --transition: all 0.3s ease;
+  --transition-slow: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+  /* Layout */
+  --max-width: 1000px;
+  --header-height: 70px;
+  --body-padding: 20px;
+  --app-padding: 2.5rem;
+}
+
+/* Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* border: 10px solid red; */
+
+
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-light-slate);
+  /* background-color: var(--color-navy); */
+  background-color: var(--temp-background);
+  min-height: 100vh;
+  padding: var(--body-padding);
+  overflow-x: hidden;
+}
+
+/* Layout */
+#app {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--app-padding);
+  background-color: var(--temp-background);
+
+  .header-img {
+    position: absolute;
+    
+    height:50%;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-white);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  background: linear-gradient(90deg, var(--color-accent), var(--color-white));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background: var(--color-accent);
+  transform: scaleX(0.7);
+  transform-origin: left;
+}
+
+/* Links */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+/* Buttons */
+button, .btn {
+  background: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--border-radius-sm);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover, .btn:hover {
+  background: rgba(var(--color-accent-rgb), 0.5);
+  transform: translateY(-2px);
+}
+
+button:disabled, .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Code blocks */
+code, pre {
+  font-family: var(--font-mono);
+  background: rgba(var(--color-accent-rgb), 0.1);
+  color: var(--color-accent);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9em;
+}
+
+code {
+  padding: 0.2em 0.4em;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: 1.5em;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+.text-accent { color: var(--color-accent); }
+.text-white { color: var(--color-white); }
+.bg-navy { background-color: var(--color-navy); }
+
+/* Animations */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  :root {
+    --body-padding: 15px;
+    --app-padding: 1.5rem;
+  }
+  
+  #app {
+    margin: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+
+p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Buttons */
+button, .btn {
+  background: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--border-radius-sm);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover, .btn:hover {
+  background: rgba(var(--color-accent-rgb), 0.1);
+  transform: translateY(-2px);
+}
+
+button:disabled, .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Code blocks */
+code, pre {
+  font-family: var(--font-mono);
+  background: rgba(var(--color-accent-rgb), 0.1);
+  color: var(--color-accent);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9em;
+}
+
+code {
+  padding: 0.2em 0.4em;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: 1.5em;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+

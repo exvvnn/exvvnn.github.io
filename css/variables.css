@@ -1,0 +1,43 @@
+:root {
+  /* Colors */
+  --color-navy: #0a192f;
+  --color-light-navy: #172a45;
+  --color-lightest-navy: #303C55;
+  --color-slate: #8892b0;
+  --color-light-slate: #a8b2d1;
+  --color-lightest-slate: #ccd6f6;
+  --color-white: #e6f1ff;
+  --color-accent: #64ffda;
+  --color-accent-rgb: 100, 255, 218;
+  
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  --font-size-base: 1rem;
+  --line-height-base: 1.6;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2.5rem;
+  
+  /* Border radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(2, 12, 27, 0.3);
+  --shadow-md: 0 4px 12px rgba(2, 12, 27, 0.4);
+  --shadow-lg: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  
+  /* Transitions */
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition-slow: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+  /* Layout */
+  --max-width: 1000px;
+  --header-height: 70px;
+}
