@@ -1,5 +1,11 @@
 // Initialize the application
 function initApp() {
+
+    // document.title = "♖ ♖ ♖♖♖ exvvnn ♖♖♖ ♖ ♖";
+    document.body.style.backgroundColor = "#23465E";
+    document.title = "🚧 Under Construction. 🏗️";
+
+
     const app = document.getElementById("app");
     if (app) {
         app.innerHTML = `
