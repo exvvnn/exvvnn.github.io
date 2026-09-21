@@ -344,6 +344,70 @@ h2 em {
   padding-bottom: 8px;
 }
 
+.contact-grid {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 22px;
+}
+
+.contact-grid h2 {
+  margin-top: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  max-width: 430px;
+}
+
+.contact-form label {
+  color: #aaa59b;
+  font: 0.65rem var(--mono);
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(244, 240, 232, 0.35);
+  border-radius: 0;
+  color: var(--paper);
+  font: 1rem var(--sans);
+  outline: 0;
+  padding: 9px 0;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--acid);
+}
+
+.form-submit {
+  align-self: flex-start;
+  background: var(--acid);
+  border: 0;
+  color: var(--ink);
+  cursor: pointer;
+  margin-top: 22px;
+}
+
+.form-submit:hover {
+  background: var(--coral);
+  color: var(--paper);
+}
+
+.form-status {
+  color: #aaa59b;
+  font: 0.68rem var(--mono);
+  min-height: 1.2em;
+}
+
 .site-footer {
   color: var(--muted);
   display: flex;
@@ -424,6 +488,15 @@ h2 em {
 
   .contact-section {
     padding: 82px 24px 96px;
+  }
+
+  .contact-grid {
+    display: block;
+  }
+
+  .contact-form {
+    margin-top: 70px;
+    max-width: none;
   }
 
   .contact-section h2 {
