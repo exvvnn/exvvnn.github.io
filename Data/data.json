@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "My Vault 🔇.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "My Vault 🔇"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0c70daa599238f67",
+    "type": "split",
+    "children": [
+      {
+        "id": "60c993eb2472c3bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36a97922683d652a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6c4628f3650ead47",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b946201fb13e31c7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 458.1465759277344
+  },
+  "right": {
+    "id": "618e8a1c5f2c27af",
+    "type": "split",
+    "children": [
+      {
+        "id": "854532049137109a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "10ad459273a69811",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Books/Temp/Natural Language Processing with Transformers (2022).pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "99b32cb60a49028a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Books/Temp/Natural Language Processing with Transformers (2022).pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "afb11b76231692fb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ede2df22089533a6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Books/Data Science/Python for Data Analysis (2022).pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "0bae8dc980285ba6",
+            "type": "leaf",
+            "state": {
+              "type": "agent-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "OBS Agent"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 558.13037109375,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "daily-notes:Open today's daily note": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "bases:Create new base": false,
+      "homepage:Open homepage": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "sheet-plus:Create excel file": true,
+      "copilot:Open Copilot Agent Chat": true,
+      "obsidian-agent:OBS Agent": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "Books/Data Science/Python for Data Analysis (2022).pdf",
+    "My Vault 🔇.md",
+    "LLM as a Microservice.canvas",
+    "Books/Data Engineering/Graph Algorithms (2019).pdf",
+    "Books/Data Science/Building Knowledge Graphs (2023).pdf",
+    "Books/Software Architecture/Building Microservices (2021).pdf",
+    "Books/Artifical Intelligence/Knowledge Graphs and LLMs in Action (2025).pdf",
+    "Books/Platform Engineering/Platform Engineering (2024).pdf",
+    "Books/Cybersecurity/The Basics of Hacking and Penetration Testing (2013).pdf",
+    "Books/Temp/AttentionIsAllYouNeed.pdf",
+    "Books/Programming Languages/Programming Rust (2021).pdf",
+    "Books/Programming Languages/Command-line Rust.pdf",
+    "Books/Temp/Natural Language Processing with Transformers (2022).pdf",
+    "Templates/Daily 🪴.md",
+    "Directories of Research/Archives/Principles of Management/Chapters/Chapter 9.md",
+    "Directories of Research/Applications/Knowledge Base/Obsidian Agent and Knowledge Base Index.md",
+    "Calender/Journals/Applications/Obsidian/Obsidian.md",
+    "Calender/2026/Daily Notes/2, February 2026/02-07-2026.md",
+    "Cheesecake Menu Items.md",
+    "Calender/2026/Daily Notes/08-18-2026.md",
+    "Directories of Research/Books/Library Index.md",
+    "Copilot/skills/obsidian-cli/SKILL.md",
+    "Copilot/skills/json-canvas/references/EXAMPLES.md",
+    "Copilot/skills/json-canvas/SKILL.md",
+    "Copilot/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md",
+    "Copilot/skills/obsidian-bases/references/EXAMPLES.md",
+    "Copilot/skills/obsidian-bases/SKILL.md",
+    "copilot/skills/obsidian-cli/SKILL.md",
+    "copilot/skills/json-canvas/SKILL.md",
+    "copilot/skills/json-canvas/references/EXAMPLES.md",
+    "copilot/skills/obsidian-bases/SKILL.md",
+    "copilot/skills/obsidian-bases/references/EXAMPLES.md",
+    "copilot/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md",
+    "Copilot/skills/obsidian-markdown/references/PROPERTIES.md",
+    "Copilot/skills/obsidian-markdown/references/EMBEDS.md",
+    "Copilot/skills/obsidian-markdown/references/CALLOUTS.md",
+    "Copilot/skills/obsidian-markdown/SKILL.md",
+    "CLI/Fish CLI Wrapper/Fishf Workflow.canvas",
+    "Projects/Trader/Trader Workflow.canvas"
+  ]
+}
